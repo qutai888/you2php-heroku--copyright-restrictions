@@ -16,7 +16,7 @@ error_reporting( E_ALL&~E_NOTICE );
 <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
 <script src="//cdn.bootcss.com/jqueryui/1.11.2/jquery-ui.js"></script>
 <link href="//cdn.bootcss.com/video.js/5.20.4/alt/video-js-cdn.min.css" rel="stylesheet" />
-<script src="//cdn.bootcss.com/video.js/5.20.4/video.min.js"></script>
+<script src="//libs.cdnjs.net/video.js/5.20.4/video.min.js"></script>
 <script type="text/javascript" src="./inc/4.js"></script>
 <link rel="stylesheet" href="./inc/theme.css" type="text/css">
 <link rel="stylesheet" href="./inc/iconfont.css">
@@ -26,7 +26,9 @@ error_reporting( E_ALL&~E_NOTICE );
 <body>
 <nav class="navbar navbar-expand-md bg-primary navbar-dark">
 <div class="container">
-	<a class="navbar-brand" href="./"><i class="fa d-inline fa-youtube-play"></i><b>&nbsp;<?php echo TITLENAME ?></b></a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+	<a class="navbar-brand" href="./"><i class="fa d-inline fa-youtube-play"></i><b>&nbsp;<?php echo TITLENAME ?></b></a>
+	<?php require_once('select_default_gl.php');?>
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 	<div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
 		<ul class="navbar-nav">
 		</ul>
